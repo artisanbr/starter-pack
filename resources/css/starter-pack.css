@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Noto+Color+Emoji&family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media (prefers-color-scheme: dark) {
+    /* Dark Mode */
+    hr {
+        border-top-color: #374151; /* Cor da borda no modo escuro */
+    }
+}
+
+/* Light Mode */
+
+
+/*Fix Sidebar menu itens colors*/
+ul#sidebar-menu li summary:hover,
+ul#sidebar-menu li a:hover {
+    @apply bg-stone-600 !important;
+}
+
+ul#sidebar-menu > li ul summary {
+    @apply mt-1 mb-0 !important;
+}
+
+ul#sidebar-menu :where(li ul):before {
+    @apply bg-stone-400 !important;
+}
+
+/* Fix sidebar padding when collapsed */
+[drawer="main-drawer"]:not(.\!w-\[70px\]) {
+    @apply p-2 !important;
+}
+
+
+/* Fix Progress on Light Theme */
+progress.progress.h-0\.5 {
+    @apply h-1 !important;
+}
+
+/* Fix Choices Search */
+.select > input[x-ref="searchInput"] {
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Noto+Color+Emoji&family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*@import 'mary-ui.css';*/
+
+@media (prefers-color-scheme: dark) {
+    hr {
+        border-top-color: #374151; /* Cor da borda no modo escuro */
+    }
+}
+
+/*#sidebar-menu summary {
+    @apply bg-stone-600 !important;
+}*/
+
+@media (prefers-color-scheme: light) {
+    ul#sidebar-menu li {
+        & summary:hover, & a:hover {
+            @apply bg-stone-600 !important;
+        }
+    }
+}
+
+
+
+
